@@ -1,0 +1,12 @@
+# mount point       fstype    device                                                                flags
+/cache           ext4     /dev/block/platform/msm_sdcc.1/by-name/cache        flags=display="Cache"
+/data            ext4     /dev/block/platform/msm_sdcc.1/by-name/userdata     flags=display="Data"
+/system          ext4     /dev/block/platform/msm_sdcc.1/by-name/system       flags=display="System";backup=1
+/boot            emmc     /dev/block/platform/msm_sdcc.1/by-name/boot         flags=display="Boot";backup=1;flashimg=1
+/recovery        emmc     /dev/block/platform/msm_sdcc.1/by-name/recovery     flags=display="Recovery";backup=1;flashimg=1
+/firmware        emmc     /dev/block/platform/msm_sdcc.1/by-name/modem        flags=display="Firmware"
+/efs             ext4     /dev/block/platform/msm_sdcc.1/by-name/efs          flags=display="Efs"
+/persist         ext4     /dev/block/platform/msm_sdcc.1/by-name/persist      flags=display="Persist"
+/misc            emmc     /dev/block/platform/msm_sdcc.1/by-name/fota         flags=display="Misc";backup=1;flashimg=1
+/external_sd     auto     /dev/block/mmcblk1p1                                flags=display="External_sd"
+/usb-otg         auto     /dev/block/sda1                                     flags=display="Usb-otg"
